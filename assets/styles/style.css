@@ -1,0 +1,6 @@
+body {
+    background: transparent no-repeat url('/assets/images/background.jpg');
+    background-attachment: fixed ;
+	background-position: top center;
+    object-fit: cover;
+}
