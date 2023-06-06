@@ -42,8 +42,9 @@ const directors = [
       top_rated_film: 'Далласский клуб покупателей'
     },
   ];
-  
-let directorsList = document.getElementById('element');
+
+
+let directorsList = document.getElementById('directorList');
 let liCollection = document.createElement('li');
 
   directors.forEach((Object) => {
