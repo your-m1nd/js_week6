@@ -44,6 +44,8 @@ const directors = [
   ];
 
 
+
+
 let directorsList = document.getElementById('directorList');
 let liCollection = document.createElement('li');
 

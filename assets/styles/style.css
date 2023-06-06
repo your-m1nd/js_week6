@@ -12,9 +12,11 @@ body {
 }
 
 h1 {
+    padding-left: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
+
 
 ol {
     font-family: 'Raleway', sans-serif;
@@ -53,12 +55,14 @@ footer {
 }
 
 h3 {
+    padding-left: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #movies {
     display: flex;
+    padding-left: 15px;
     padding-top: 10px;
-    justify-content: center;
+    justify-content: flex-start;
 }
