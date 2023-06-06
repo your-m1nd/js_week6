@@ -42,14 +42,27 @@ const directors = [
       top_rated_film: 'Далласский клуб покупателей'
     },
   ];
-let directorsList = document.getElementById('directorsList');
-let divCollection = document.querySelector('div');
+  
+let directorsList = document.getElementById('element');
+let liCollection = document.createElement('li');
 
   directors.forEach((Object) => {
-    divCollection += `<div class="director__info>
+    
+    liCollection += `<li class="director__info">
     <h2 class="director__name">${Object.name}</h2>
-    <p class=""director__career">${Object.career}</p>
+    <p class="director__career">${Object.career}</p>
     <a href="${Object.films}">Фильмы</a>
-    </div>`;
-    directorsList.innerHTML = divCollection;
+    </li>
+    `;
+    
+    directorsList.innerHTML = liCollection;
    }) ;
+
+   const topFilmsList = directors.map(function(directors) {
+    return directors.top_rated_film;
+   });
+
+const bestFilms = topFilmsList.join(', ');
+
+let movies = document.getElementById('movies');
+movies.textContent = bestFilms;
